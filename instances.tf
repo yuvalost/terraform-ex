@@ -19,7 +19,7 @@ resource "aws_instance" "linux" {
 
 
 resource "aws_instance" "windows" {
-  ami           = var.AMIS[var.AWS_REGION]
+  ami           = data.aws_ami.windows-ami.image_id
   instance_type = "t2.large"
 
   # the VPC subnet
