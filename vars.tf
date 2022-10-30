@@ -18,3 +18,10 @@ variable AMIS {
     "us-west-1" = "ami-064562725417500be"
   }
 }
+
+
+variable "INSTANCE_USERNAME" {
+    default = "terraform"
+}
+
+variable "INSTANCE_PASSWORD" {}
